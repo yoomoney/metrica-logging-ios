@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="538757ed-37d3-4367-ac81-a8d15bcf77b4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/BalanceUpdateEvent.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/BuySuccessEvent.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/CardTopupEvent.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/Event.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/OpenMainScreenEvent.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/SellSuccessEvent.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/AmplitudeTracker.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/AppMetricaTracker.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/FabricTracker.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/SystemLogTracker.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/Tracker.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/TrackerType.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/TrackersContainer.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Helpers/ExpectationHelper.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Helpers/ReportHelpers.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Models/DebugEvent.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Services/TrackingLogProvider.swift" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Services/TrackingLogProviderImpl.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetricaLogging.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetricaLogging.xcodeproj/xcuserdata/zelikson.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging.xcodeproj/xcuserdata/zelikson.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetricaLogging/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging/Base.lproj/Main.storyboard" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetricaLogging/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging/ViewController.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MetricaLoggingUITests/MetricaLoggingUITests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLoggingUITests/MetricaLoggingUITests.swift" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_C38FDE0C-FDEE-4A84-9317-08F4B3437A7E" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kpRu45m3ip73lPF6QxLZPUH9ZK" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="manualOrder" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="Application.MetricaLogging">
+    <list>
+      <item itemvalue="Application.MetricaLogging" />
+      <item itemvalue="XCTest.MetricaLoggingUITests" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="538757ed-37d3-4367-ac81-a8d15bcf77b4" name="Default Changelist" comment="" />
+      <created>1606395767584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606395767584</updated>
+      <workItem from="1606395772154" duration="803000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="563" y="307" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606396002358">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="563" y="307" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027/1680.-42.1920.982@0.23.1680.1027" timestamp="1606396002358" />
+    <state x="505" y="231" width="670" height="676" key="search.everywhere.popup" timestamp="1606396578202">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="231" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/1680.-42.1920.982@0.23.1680.1027" timestamp="1606396011919" />
+    <state x="505" y="231" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606396578202" />
+  </component>
+</project>
