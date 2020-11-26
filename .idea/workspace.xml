@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="538757ed-37d3-4367-ac81-a8d15bcf77b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/BalanceUpdateEvent.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/BuySuccessEvent.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/CardTopupEvent.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/Event.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/OpenMainScreenEvent.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Events/SellSuccessEvent.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/AmplitudeTracker.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/AppMetricaTracker.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/FabricTracker.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/SystemLogTracker.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/Tracker.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/TrackerType.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLogging/Common/Analytics/Tracker/TrackersContainer.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Helpers/ExpectationHelper.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Helpers/ReportHelpers.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Models/DebugEvent.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Services/TrackingLogProvider.swift" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MetricaLoggingUITests/Common/Services/TrackingLogProviderImpl.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetricaLogging.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetricaLogging.xcodeproj/xcuserdata/zelikson.xcuserdatad/xcschemes/xcschememanagement.plist" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging.xcodeproj/xcuserdata/zelikson.xcuserdatad/xcschemes/xcschememanagement.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetricaLogging/Base.lproj/Main.storyboard" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging/Base.lproj/Main.storyboard" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetricaLogging/ViewController.swift" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLogging/ViewController.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MetricaLoggingUITests/MetricaLoggingUITests.swift" beforeDir="false" afterPath="$PROJECT_DIR$/MetricaLoggingUITests/MetricaLoggingUITests.swift" afterDir="false" />
+    <list default="true" id="538757ed-37d3-4367-ac81-a8d15bcf77b4" name="Default Changelist" comment="Append rakefile with scrypt for start streaming">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +24,9 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_C38FDE0C-FDEE-4A84-9317-08F4B3437A7E" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="onto" value="a51d21df545085819d8998dcf96d0aca4f448ceb" />
   </component>
   <component name="ProjectId" id="1kpRu45m3ip73lPF6QxLZPUH9ZK" />
   <component name="ProjectViewState">
@@ -45,7 +38,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Application.MetricaLogging">
     <list>
@@ -61,8 +61,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606395767584</updated>
-      <workItem from="1606395772154" duration="803000" />
+      <workItem from="1606395772154" duration="7832000" />
     </task>
+    <task id="LOCAL-00001" summary="Append project">
+      <created>1606396604119</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606396604119</updated>
+    </task>
+    <task id="LOCAL-00002" summary="AppendProject">
+      <created>1606396781832</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606396781832</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Append rakefile with scrypt for start streaming">
+      <created>1606416593252</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1606416593253</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -79,15 +101,49 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Append project" />
+    <MESSAGE value="AppendProject" />
+    <MESSAGE value="Append rakefile with scrypt for start streaming" />
+    <option name="LAST_COMMIT_MESSAGE" value="Append rakefile with scrypt for start streaming" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="563" y="307" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606396002358">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="563" y="307" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027/1680.-42.1920.982@0.23.1680.1027" timestamp="1606396002358" />
-    <state x="505" y="231" width="670" height="676" key="search.everywhere.popup" timestamp="1606396578202">
+    <state x="1794" y="54" width="1692" height="722" key="DiffContextDialog" timestamp="1606416533630">
+      <screen x="1680" y="-42" width="1920" height="986" />
+    </state>
+    <state x="100" y="123" width="1480" height="751" key="DiffContextDialog/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606397751028" />
+    <state x="1794" y="54" width="1692" height="722" key="DiffContextDialog/0.23.1680.1027/1680.-42.1920.986@1680.-42.1920.986" timestamp="1606416533630" />
+    <state x="340" y="189" key="Git.Interactive.Rebase.Dialog" timestamp="1606396694301">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
+    <state x="340" y="189" key="Git.Interactive.Rebase.Dialog/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606396694301" />
+    <state x="647" y="409" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog" timestamp="1606396679804">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="647" y="409" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606396679804" />
+    <state x="341" y="137" key="SettingsEditor" timestamp="1606396973675">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="341" y="137" key="SettingsEditor/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606396973675" />
+    <state x="2183" y="164" key="Vcs.Push.Dialog.v2" timestamp="1606416600661">
+      <screen x="1680" y="-42" width="1920" height="986" />
+    </state>
+    <state x="440" y="238" key="Vcs.Push.Dialog.v2/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606397748097" />
+    <state x="2183" y="164" key="Vcs.Push.Dialog.v2/0.23.1680.1027/1680.-42.1920.986@1680.-42.1920.986" timestamp="1606416600661" />
+    <state x="440" y="224" key="Vcs.Push.Dialog.v2/0.23.1680.961/1680.-42.1920.1057@0.23.1680.961" timestamp="1606398989822" />
+    <state x="662" y="399" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1606397462053">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="662" y="399" key="git4idea.remote.GitConfigureRemotesDialog/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606397462053" />
+    <state x="505" y="218" width="670" height="633" key="search.everywhere.popup" timestamp="1606398749116">
+      <screen x="0" y="23" width="1680" height="961" />
+    </state>
     <state x="505" y="231" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/1680.-42.1920.982@0.23.1680.1027" timestamp="1606396011919" />
-    <state x="505" y="231" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606396578202" />
+    <state x="505" y="231" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027/1680.-42.1920.984@0.23.1680.1027" timestamp="1606397447132" />
+    <state x="505" y="218" width="670" height="633" key="search.everywhere.popup/0.23.1680.961/1680.-42.1920.1057@0.23.1680.961" timestamp="1606398749116" />
   </component>
 </project>
