@@ -26,10 +26,10 @@ import UIKit
 class ViewController: UITableViewController {
     
     private let tracker: Tracker = TrackersContainer(
-            appMetricaTracker: AppMetricaTracker(),
-            fabricTracker: FabricTracker(),
-            amplitudeTracker: AmplitudeTracker(),
-            systemLogTracker: SystemLogTracker()
+        appMetricaTracker: AppMetricaTracker(),
+        fabricTracker: FabricTracker(),
+        amplitudeTracker: AmplitudeTracker(),
+        systemLogTracker: SystemLogTracker()
     )
     
     private lazy var trackAsyncSellAction = {
