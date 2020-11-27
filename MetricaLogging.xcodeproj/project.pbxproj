@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEE37835256DCB2C00E5F140 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37834256DCB2C00E5F140 /* AppDelegate.swift */; };
+		DEE37837256DCB2C00E5F140 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37836256DCB2C00E5F140 /* SceneDelegate.swift */; };
+		DEE37839256DCB2C00E5F140 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37838256DCB2C00E5F140 /* ViewController.swift */; };
+		DEE3783C256DCB2C00E5F140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE3783A256DCB2C00E5F140 /* Main.storyboard */; };
+		DEE3783E256DCB2D00E5F140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEE3783D256DCB2D00E5F140 /* Assets.xcassets */; };
+		DEE37841256DCB2D00E5F140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEE3783F256DCB2D00E5F140 /* LaunchScreen.storyboard */; };
+		DEE3784C256DCB2E00E5F140 /* MetricaLoggingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3784B256DCB2E00E5F140 /* MetricaLoggingUITests.swift */; };
+		DEE37857256DCB6100E5F140 /* TrackingLogProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37856256DCB6100E5F140 /* TrackingLogProvider.swift */; };
+		DEE37859256DCB8500E5F140 /* DebugEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37858256DCB8500E5F140 /* DebugEvent.swift */; };
+		DEE3785B256DCC0A00E5F140 /* TrackingLogProviderImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3785A256DCC0A00E5F140 /* TrackingLogProviderImpl.swift */; };
+		DEE3785D256DD07100E5F140 /* ExpectationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3785C256DD07100E5F140 /* ExpectationHelper.swift */; };
+		DEE3785F256DD29C00E5F140 /* ReportHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3785E256DD29C00E5F140 /* ReportHelpers.swift */; };
+		DEE37867256E573E00E5F140 /* SystemLogTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37866256E573E00E5F140 /* SystemLogTracker.swift */; };
+		DEE3786A256E576200E5F140 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37869256E576200E5F140 /* Event.swift */; };
+		DEE3786C256E57E900E5F140 /* OpenMainScreenEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3786B256E57E900E5F140 /* OpenMainScreenEvent.swift */; };
+		DEE3786E256E599E00E5F140 /* TrackerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3786D256E599E00E5F140 /* TrackerType.swift */; };
+		DEE37870256E5AEC00E5F140 /* Tracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3786F256E5AEC00E5F140 /* Tracker.swift */; };
+		DEE37872256E67D000E5F140 /* TrackersContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37871256E67D000E5F140 /* TrackersContainer.swift */; };
+		DEE37875256E6ABB00E5F140 /* AppMetricaTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37874256E6ABB00E5F140 /* AppMetricaTracker.swift */; };
+		DEE37877256E6AD600E5F140 /* FabricTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37876256E6AD600E5F140 /* FabricTracker.swift */; };
+		DEE37879256E6AEE00E5F140 /* AmplitudeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37878256E6AEE00E5F140 /* AmplitudeTracker.swift */; };
+		DEE3787B256E6F5B00E5F140 /* BuySuccessEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3787A256E6F5B00E5F140 /* BuySuccessEvent.swift */; };
+		DEE3787D256E6F6900E5F140 /* SellSuccessEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3787C256E6F6900E5F140 /* SellSuccessEvent.swift */; };
+		DEE3787F256E6F8A00E5F140 /* BalanceUpdateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE3787E256E6F8A00E5F140 /* BalanceUpdateEvent.swift */; };
+		DEE37881256E6FB200E5F140 /* CardTopupEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEE37880256E6FB200E5F140 /* CardTopupEvent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEE37848256DCB2E00E5F140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEE37829256DCB2C00E5F140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEE37830256DCB2C00E5F140;
+			remoteInfo = MetricaLogging;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEE37831256DCB2C00E5F140 /* MetricaLogging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetricaLogging.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE37834256DCB2C00E5F140 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEE37836256DCB2C00E5F140 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEE37838256DCB2C00E5F140 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEE3783B256DCB2C00E5F140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEE3783D256DCB2D00E5F140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEE37840256DCB2D00E5F140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEE37842256DCB2D00E5F140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE37847256DCB2E00E5F140 /* MetricaLoggingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MetricaLoggingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE3784B256DCB2E00E5F140 /* MetricaLoggingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricaLoggingUITests.swift; sourceTree = "<group>"; };
+		DEE3784D256DCB2E00E5F140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEE37856256DCB6100E5F140 /* TrackingLogProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingLogProvider.swift; sourceTree = "<group>"; };
+		DEE37858256DCB8500E5F140 /* DebugEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugEvent.swift; sourceTree = "<group>"; };
+		DEE3785A256DCC0A00E5F140 /* TrackingLogProviderImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingLogProviderImpl.swift; sourceTree = "<group>"; };
+		DEE3785C256DD07100E5F140 /* ExpectationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpectationHelper.swift; sourceTree = "<group>"; };
+		DEE3785E256DD29C00E5F140 /* ReportHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportHelpers.swift; sourceTree = "<group>"; };
+		DEE37866256E573E00E5F140 /* SystemLogTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLogTracker.swift; sourceTree = "<group>"; };
+		DEE37869256E576200E5F140 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		DEE3786B256E57E900E5F140 /* OpenMainScreenEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMainScreenEvent.swift; sourceTree = "<group>"; };
+		DEE3786D256E599E00E5F140 /* TrackerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerType.swift; sourceTree = "<group>"; };
+		DEE3786F256E5AEC00E5F140 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracker.swift; sourceTree = "<group>"; };
+		DEE37871256E67D000E5F140 /* TrackersContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackersContainer.swift; sourceTree = "<group>"; };
+		DEE37874256E6ABB00E5F140 /* AppMetricaTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetricaTracker.swift; sourceTree = "<group>"; };
+		DEE37876256E6AD600E5F140 /* FabricTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FabricTracker.swift; sourceTree = "<group>"; };
+		DEE37878256E6AEE00E5F140 /* AmplitudeTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeTracker.swift; sourceTree = "<group>"; };
+		DEE3787A256E6F5B00E5F140 /* BuySuccessEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuySuccessEvent.swift; sourceTree = "<group>"; };
+		DEE3787C256E6F6900E5F140 /* SellSuccessEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellSuccessEvent.swift; sourceTree = "<group>"; };
+		DEE3787E256E6F8A00E5F140 /* BalanceUpdateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceUpdateEvent.swift; sourceTree = "<group>"; };
+		DEE37880256E6FB200E5F140 /* CardTopupEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTopupEvent.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEE3782E256DCB2C00E5F140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE37844256DCB2E00E5F140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEE37828256DCB2C00E5F140 = {
+			isa = PBXGroup;
+			children = (
+				DEE37833256DCB2C00E5F140 /* MetricaLogging */,
+				DEE3784A256DCB2E00E5F140 /* MetricaLoggingUITests */,
+				DEE37832256DCB2C00E5F140 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEE37832256DCB2C00E5F140 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37831256DCB2C00E5F140 /* MetricaLogging.app */,
+				DEE37847256DCB2E00E5F140 /* MetricaLoggingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEE37833256DCB2C00E5F140 /* MetricaLogging */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37864256E571000E5F140 /* Common */,
+				DEE37834256DCB2C00E5F140 /* AppDelegate.swift */,
+				DEE37836256DCB2C00E5F140 /* SceneDelegate.swift */,
+				DEE37838256DCB2C00E5F140 /* ViewController.swift */,
+				DEE3783A256DCB2C00E5F140 /* Main.storyboard */,
+				DEE3783D256DCB2D00E5F140 /* Assets.xcassets */,
+				DEE3783F256DCB2D00E5F140 /* LaunchScreen.storyboard */,
+				DEE37842256DCB2D00E5F140 /* Info.plist */,
+			);
+			path = MetricaLogging;
+			sourceTree = "<group>";
+		};
+		DEE3784A256DCB2E00E5F140 /* MetricaLoggingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37860256DD2E600E5F140 /* Common */,
+				DEE3784B256DCB2E00E5F140 /* MetricaLoggingUITests.swift */,
+				DEE3784D256DCB2E00E5F140 /* Info.plist */,
+			);
+			path = MetricaLoggingUITests;
+			sourceTree = "<group>";
+		};
+		DEE37860256DD2E600E5F140 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37863256DD35900E5F140 /* Models */,
+				DEE37862256DD34700E5F140 /* Helpers */,
+				DEE37861256DD32E00E5F140 /* Services */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DEE37861256DD32E00E5F140 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37856256DCB6100E5F140 /* TrackingLogProvider.swift */,
+				DEE3785A256DCC0A00E5F140 /* TrackingLogProviderImpl.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		DEE37862256DD34700E5F140 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DEE3785E256DD29C00E5F140 /* ReportHelpers.swift */,
+				DEE3785C256DD07100E5F140 /* ExpectationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DEE37863256DD35900E5F140 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37858256DCB8500E5F140 /* DebugEvent.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DEE37864256E571000E5F140 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37865256E571B00E5F140 /* Analytics */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DEE37865256E571B00E5F140 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37873256E6A7900E5F140 /* Tracker */,
+				DEE37868256E574500E5F140 /* Events */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		DEE37868256E574500E5F140 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				DEE37869256E576200E5F140 /* Event.swift */,
+				DEE3786B256E57E900E5F140 /* OpenMainScreenEvent.swift */,
+				DEE3787A256E6F5B00E5F140 /* BuySuccessEvent.swift */,
+				DEE3787C256E6F6900E5F140 /* SellSuccessEvent.swift */,
+				DEE3787E256E6F8A00E5F140 /* BalanceUpdateEvent.swift */,
+				DEE37880256E6FB200E5F140 /* CardTopupEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		DEE37873256E6A7900E5F140 /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				DEE3786D256E599E00E5F140 /* TrackerType.swift */,
+				DEE3786F256E5AEC00E5F140 /* Tracker.swift */,
+				DEE37871256E67D000E5F140 /* TrackersContainer.swift */,
+				DEE37866256E573E00E5F140 /* SystemLogTracker.swift */,
+				DEE37874256E6ABB00E5F140 /* AppMetricaTracker.swift */,
+				DEE37876256E6AD600E5F140 /* FabricTracker.swift */,
+				DEE37878256E6AEE00E5F140 /* AmplitudeTracker.swift */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEE37830256DCB2C00E5F140 /* MetricaLogging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE37850256DCB2E00E5F140 /* Build configuration list for PBXNativeTarget "MetricaLogging" */;
+			buildPhases = (
+				DEE3782D256DCB2C00E5F140 /* Sources */,
+				DEE3782E256DCB2C00E5F140 /* Frameworks */,
+				DEE3782F256DCB2C00E5F140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MetricaLogging;
+			productName = MetricaLogging;
+			productReference = DEE37831256DCB2C00E5F140 /* MetricaLogging.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEE37846256DCB2E00E5F140 /* MetricaLoggingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEE37853256DCB2E00E5F140 /* Build configuration list for PBXNativeTarget "MetricaLoggingUITests" */;
+			buildPhases = (
+				DEE37843256DCB2E00E5F140 /* Sources */,
+				DEE37844256DCB2E00E5F140 /* Frameworks */,
+				DEE37845256DCB2E00E5F140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEE37849256DCB2E00E5F140 /* PBXTargetDependency */,
+			);
+			name = MetricaLoggingUITests;
+			productName = MetricaLoggingUITests;
+			productReference = DEE37847256DCB2E00E5F140 /* MetricaLoggingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEE37829256DCB2C00E5F140 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = yoomoney;
+				TargetAttributes = {
+					DEE37830256DCB2C00E5F140 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DEE37846256DCB2E00E5F140 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = DEE37830256DCB2C00E5F140;
+					};
+				};
+			};
+			buildConfigurationList = DEE3782C256DCB2C00E5F140 /* Build configuration list for PBXProject "MetricaLogging" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEE37828256DCB2C00E5F140;
+			productRefGroup = DEE37832256DCB2C00E5F140 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEE37830256DCB2C00E5F140 /* MetricaLogging */,
+				DEE37846256DCB2E00E5F140 /* MetricaLoggingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEE3782F256DCB2C00E5F140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE37841256DCB2D00E5F140 /* LaunchScreen.storyboard in Resources */,
+				DEE3783E256DCB2D00E5F140 /* Assets.xcassets in Resources */,
+				DEE3783C256DCB2C00E5F140 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE37845256DCB2E00E5F140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEE3782D256DCB2C00E5F140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE3787D256E6F6900E5F140 /* SellSuccessEvent.swift in Sources */,
+				DEE37877256E6AD600E5F140 /* FabricTracker.swift in Sources */,
+				DEE37839256DCB2C00E5F140 /* ViewController.swift in Sources */,
+				DEE37881256E6FB200E5F140 /* CardTopupEvent.swift in Sources */,
+				DEE37879256E6AEE00E5F140 /* AmplitudeTracker.swift in Sources */,
+				DEE37867256E573E00E5F140 /* SystemLogTracker.swift in Sources */,
+				DEE37835256DCB2C00E5F140 /* AppDelegate.swift in Sources */,
+				DEE37872256E67D000E5F140 /* TrackersContainer.swift in Sources */,
+				DEE3787B256E6F5B00E5F140 /* BuySuccessEvent.swift in Sources */,
+				DEE3786C256E57E900E5F140 /* OpenMainScreenEvent.swift in Sources */,
+				DEE3786E256E599E00E5F140 /* TrackerType.swift in Sources */,
+				DEE3787F256E6F8A00E5F140 /* BalanceUpdateEvent.swift in Sources */,
+				DEE37875256E6ABB00E5F140 /* AppMetricaTracker.swift in Sources */,
+				DEE37870256E5AEC00E5F140 /* Tracker.swift in Sources */,
+				DEE37837256DCB2C00E5F140 /* SceneDelegate.swift in Sources */,
+				DEE3786A256E576200E5F140 /* Event.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEE37843256DCB2E00E5F140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE37857256DCB6100E5F140 /* TrackingLogProvider.swift in Sources */,
+				DEE3784C256DCB2E00E5F140 /* MetricaLoggingUITests.swift in Sources */,
+				DEE3785D256DD07100E5F140 /* ExpectationHelper.swift in Sources */,
+				DEE3785B256DCC0A00E5F140 /* TrackingLogProviderImpl.swift in Sources */,
+				DEE37859256DCB8500E5F140 /* DebugEvent.swift in Sources */,
+				DEE3785F256DD29C00E5F140 /* ReportHelpers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEE37849256DCB2E00E5F140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEE37830256DCB2C00E5F140 /* MetricaLogging */;
+			targetProxy = DEE37848256DCB2E00E5F140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEE3783A256DCB2C00E5F140 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE3783B256DCB2C00E5F140 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEE3783F256DCB2D00E5F140 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEE37840256DCB2D00E5F140 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEE3784E256DCB2E00E5F140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEE3784F256DCB2E00E5F140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEE37851256DCB2E00E5F140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricaLogging/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.MetricaLogging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEE37852256DCB2E00E5F140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricaLogging/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.MetricaLogging;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DEE37854256DCB2E00E5F140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricaLoggingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.MetricaLoggingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetricaLogging;
+			};
+			name = Debug;
+		};
+		DEE37855256DCB2E00E5F140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MetricaLoggingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.yoo.money.MetricaLoggingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MetricaLogging;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEE3782C256DCB2C00E5F140 /* Build configuration list for PBXProject "MetricaLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE3784E256DCB2E00E5F140 /* Debug */,
+				DEE3784F256DCB2E00E5F140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE37850256DCB2E00E5F140 /* Build configuration list for PBXNativeTarget "MetricaLogging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE37851256DCB2E00E5F140 /* Debug */,
+				DEE37852256DCB2E00E5F140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEE37853256DCB2E00E5F140 /* Build configuration list for PBXNativeTarget "MetricaLoggingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEE37854256DCB2E00E5F140 /* Debug */,
+				DEE37855256DCB2E00E5F140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEE37829256DCB2C00E5F140 /* Project object */;
+}
